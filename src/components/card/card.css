@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+.card .front {
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: all 0.8s ease-in-out;
+}
+
+.front.matched {
+  transform: rotateY(0deg);
+  transition-delay: 0.8s;
+}
+
+.card .back {
+  transition: all 0.8s ease-in-out;
+  transform: rotateY(0deg);
+  transition-delay: 0.8s;
+}
+
+.back.matched {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    height: 100px;
+    width: 100px;
+  }
+}

@@ -1,0 +1,44 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+.modal_box {
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  height: 150px;
+}
+
+.show {
+  transform: scale(1);
+}
+.modal_box p {
+  margin: 25px 0 10px;
+  font-size: 22px;
+}
+
+.modal_btn {
+  display: block;
+  border: 1px solid #fff;
+  background-color: #e67e22;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100px;
+}
